@@ -1,6 +1,6 @@
 # Deployment-pipelines-and-cloud-platforms
 
-Step 1: Choose a Cloud Platform 
+## Step 1: Choose a Cloud Platform 
 
 Using AWS i go to IAM and create  a user "joes3bucket"
 ![1](./img/1.png)
@@ -9,7 +9,7 @@ which i would need to attach to my repository "https://github.com/Emmyace-hub/De
 ![1](./img/1a.png)
 
 
-Step 2: Create a GitHub Workflow File
+## Step 2: Create a GitHub Workflow File
 
 Using the commands below to set a github workflow and create a new file "AWS-deploy.yml" in it
           mkdir -p .github/workflows
@@ -50,4 +50,16 @@ i attach the code snipet below into the new file "AWS-deploy.yml" in order to tr
 ![2](./img/2a.png)
 
 
-Use this template for AWS deployment:
+## Step 3: Add Secrets to GitHub
+
+Go to your repo’s Settings → Secrets → Actions:
+![3](./img/3.png)
+
+Add the user "jos3bucket" AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY that was created on the AWS management console
+![3a](./img/3a.png)
+
+Step 4: Push Code to Trigger Deployment
+
+When you push to the main branch, this workflow will run.
+
+Check “Actions” in your repo to monitor progress and troubleshoot.
