@@ -62,4 +62,5 @@ Step 4: Push Code to Trigger Deployment
 
 When you push to the main branch, this workflow will run.
 
-Check “Actions” in your repo to monitor progress and troubleshoot.
+Check “Actions” in your repo to monitor progress and troubleshoot ,as we can see below it successfully deployed
+![3b](./img/3b.png)
